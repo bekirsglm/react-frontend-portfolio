@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+/* Body ayarları */
+body {
+  @apply font-sans bg-black text-white min-h-screen;
+
+  background: radial-gradient(
+      circle at 0% 50%,
+      rgba(170, 0, 255, 0.30), /* mor bir tık daha açık */
+      transparent 62%
+    ),
+    radial-gradient(
+      circle at 100% 50%,
+      rgba(255, 50, 200, 0.25), /* pembe bir tık daha açık */
+      transparent 62%
+    ),
+    #000000;
+}
+
+/* Fade-in animasyonları */
+@keyframes about-fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(40px) scale(1);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animate-about-fade {
+  animation: about-fade-in 0.6s ease-out forwards;
+}
+
