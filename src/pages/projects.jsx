@@ -10,12 +10,12 @@ const projects = [
     github: "https://github.com/bekirsglm/x-twitter-clone",
   },
   {
-    title: "COVID-19 Küresel Harita",
+    title: "React Netflix Clone",
     description:
-      "Dünya genelindeki COVID-19 verilerini interaktif harita üzerinde görselleştiren uygulama.",
-    gif: "/gifler/proje2.gif",
-    tech: ["React", "React Simple Maps", "RapidAPI", "TailwindCSS", "Axios"],
-    github: "https://github.com/bekirsglm/covid-map",
+      "Netflix benzeri web uygulaması, API ile dinamik veri, video oynatma ve responsive tasarım.",
+    gif: "/gifler/proje4.gif",
+    tech: ["React", "Redux", "Axios", "React Router", "TailwindCSS", "Vite"],
+    github: "https://github.com/bekirsglm/netflix-clone",
   },
   {
     title: "Real-Time Chat App",
@@ -26,12 +26,12 @@ const projects = [
     github: "https://github.com/bekirsglm/chat-app",
   },
   {
-    title: "React Netflix Clone",
+    title: "COVID-19 Küresel Harita",
     description:
-      "Netflix benzeri web uygulaması, API ile dinamik veri, video oynatma ve responsive tasarım.",
-    gif: "/gifler/proje4.gif",
-    tech: ["React", "Redux", "Axios", "React Router", "TailwindCSS", "Vite"],
-    github: "https://github.com/bekirsglm/netflix-clone",
+      "Dünya genelindeki COVID-19 verilerini interaktif harita üzerinde görselleştiren uygulama.",
+    gif: "/gifler/proje2.gif",
+    tech: ["React", "React Simple Maps", "RapidAPI", "TailwindCSS", "Axios"],
+    github: "https://github.com/bekirsglm/covid-map",
   },
 ];
 
@@ -40,18 +40,17 @@ export default function Projects() {
     <section className="w-full min-h-screen px-4 sm:px-6 lg:px-10 pt-24 pb-20 text-white">
       {/* Başlık */}
       <div className="max-w-4xl mx-auto text-center mb-16">
-  <h1 className="text-4xl sm:text-4xl font-bold mb-4 bg-linear-to-r from-white via-purple-500 to-pink-500 bg-clip-text text-transparent leading-snug inline-block">
-    Projelerim Hakkında
-  </h1>
-  <p className="text-lg sm:text-xl text-white/80 leading-relaxed">
-    Projelerimden birkaçından hangi teknolojileri kullandığımı ve projelerin
-    özelliklerini inceleyebilirsiniz.
-  </p>
-</div>
-
+        <h1 className="text-4xl sm:text-4xl font-bold mb-4 bg-linear-to-r from-white via-purple-500 to-pink-500 bg-clip-text text-transparent leading-snug inline-block">
+          Projelerim Hakkında
+        </h1>
+        <p className="text-lg sm:text-xl text-white/80 leading-relaxed">
+          Projelerimden birkaçından hangi teknolojileri kullandığımı ve projelerin
+          özelliklerini inceleyebilirsiniz.
+        </p>
+      </div>
 
       {/* Projeler Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-7xl mx-auto">
         {projects.map((project, idx) => (
           <div
             key={idx}
@@ -62,11 +61,11 @@ export default function Projects() {
             }}
           >
             {/* GIF / Görsel */}
-            <div className="w-full h-64 bg-black/20">
+            <div className="w-full h-64 sm:h-72 md:h-80 bg-black/20 overflow-hidden">
               <img
                 src={project.gif}
                 alt={project.title}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover object-center"
               />
             </div>
 
