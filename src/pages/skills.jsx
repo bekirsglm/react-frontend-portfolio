@@ -27,7 +27,7 @@ export default function Skills() {
   return (
     <section className="w-full min-h-screen px-4 sm:px-6 lg:px-10 pt-24 pb-20 text-white">
      <div className="max-w-4xl mx-auto text-center mb-16">
-  <h1 className="text-4xl sm:text-5xl font-bold mb-4 bg-gradient-to-r from-white via-purple-500 to-pink-500 bg-clip-text text-transparent">
+  <h1 className="text-4xl sm:text-5xl font-bold mb-4 bg-linear-to-r from-white via-purple-500 to-pink-500 bg-clip-text text-transparent">
     Yeteneklerim
   </h1>
   <p className="text-white/80 text-lg sm:text-xl leading-relaxed">
@@ -40,7 +40,14 @@ export default function Skills() {
         {skills.map((skill, idx) => (
           <div
             key={idx}
-            className="bg-white/10 border border-white/20 rounded-2xl p-5 flex flex-col items-center gap-3 hover:scale-105 transition-transform duration-300 opacity-0 animate-skillFadeIn"
+            className="
+  bg-white/10 border border-white/20 rounded-2xl p-5 
+  flex flex-col items-center gap-3 
+  opacity-0 animate-skillFadeIn 
+  transition duration-500 ease-out 
+  hover:scale-105 hover:bg-white/20 hover:border-purple-400/40 
+  hover:shadow-[0_0_25px_rgba(168,85,247,0.6)]
+"
             style={{
               animationDelay: `${idx * 0.1}s`,
               animationFillMode: "forwards",
