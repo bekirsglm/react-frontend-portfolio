@@ -59,7 +59,7 @@ export default function Navbar() {
         <div className="flex w-full md:w-auto items-center justify-between md:justify-start gap-3 sm:gap-4">
           <NavLink
             to="/"
-            className="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-tr from-purple-600 to-pink-500 shadow-lg hover:scale-[1.03] transition-transform lg:hidden"
+            className="flex items-center justify-center w-12 h-12 rounded-full bg-linear-to-tr from-purple-600 to-pink-500 shadow-lg hover:scale-[1.03] transition-transform lg:hidden"
             aria-label="Bekir Sağlam anasayfa"
           >
             <img
@@ -71,7 +71,7 @@ export default function Navbar() {
 
           <NavLink
   to="/"
-  className="text-xl sm:text-2xl lg:text-2xl font-bold tracking-wide hover:text-purple-300 transition-colors bg-gradient-to-r from-white via-purple-500 to-pink-500 bg-clip-text text-transparent"
+  className="text-xl sm:text-2xl lg:text-2xl font-bold tracking-wide hover:text-purple-300 transition-colors bg-linear-to-r from-white via-purple-500 to-pink-500 bg-clip-text text-transparent"
 >
   BEKİR SAĞLAM
 </NavLink>

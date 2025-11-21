@@ -1,10 +1,12 @@
-import { useEffect } from "react";
+
+
+
 
 const icons = {
   github: (
     <svg
       viewBox="0 0 24 24"
-      className="w-6 h-6 fill-white/80 group-hover:fill-fuchsia-300 transition-colors"
+      className="w-6 h-6 fill-white group-hover:fill-fuchsia-700 transition-colors"
       aria-hidden
     >
       <path d="M12 0a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.24c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.74.08-.74 1.2.09 1.83 1.24 1.83 1.24 1.07 1.83 2.81 1.3 3.5.99.11-.78.42-1.3.76-1.6-2.67-.31-5.47-1.34-5.47-5.96 0-1.32.47-2.4 1.24-3.24-.13-.31-.54-1.56.12-3.24 0 0 1-.32 3.3 1.23a11.4 11.4 0 0 1 6 0c2.3-1.55 3.3-1.23 3.3-1.23.66 1.68.25 2.93.12 3.24.77.84 1.24 1.92 1.24 3.24 0 4.64-2.8 5.64-5.47 5.94.43.36.82 1.08.82 2.18v3.23c0 .32.22.7.82.58A12 12 0 0 0 12 0Z" />
@@ -13,7 +15,7 @@ const icons = {
   linkedin: (
     <svg
       viewBox="0 0 24 24"
-      className="w-6 h-6 fill-white/80 group-hover:fill-fuchsia-300 transition-colors"
+      className="w-6 h-6 fill-white/80 group-hover:fill-fuchsia-700 transition-colors"
       aria-hidden
     >
       <path d="M4.98 3.5a2.5 2.5 0 1 1 0 5.001 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3zM9 9h3.7v1.64h.05c.52-.98 1.8-2 3.7-2 4 0 4.7 2.63 4.7 6.05V21h-4v-5.33c0-1.27-.02-2.9-1.77-2.9-1.78 0-2.05 1.38-2.05 2.8V21H9z" />
@@ -22,7 +24,7 @@ const icons = {
   mail: (
     <svg
       viewBox="0 0 24 24"
-      className="w-6 h-6 stroke-white/80 group-hover:stroke-fuchsia-300 transition-colors"
+      className="w-6 h-6 stroke-white/80 group-hover:stroke-fuchsia-700 transition-colors"
       fill="none"
       strokeWidth="1.8"
       aria-hidden
@@ -70,7 +72,7 @@ const Contact = () => {
               Bana Ulaşmanın En Kolay Yolu
             </h1>
             <p className="mt-4 text-base sm:text-lg text-slate-200 leading-relaxed">
-              Aşağıdaki kanallardan dilediğinizi seçerek benimle kolayca
+              Aşağıdaki iletişim  kanallarından dilediğinizi seçerek benimle kolayca
               iletişime geçebilirsiniz. İlgili sayfalara erişmek için tıklamanız yeterli.
             </p>
 
@@ -83,7 +85,7 @@ const Contact = () => {
                   rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
                   className="group flex items-start gap-4 sm:gap-6 p-6 sm:p-8 rounded-2xl border border-white/15 bg-white/5 hover:bg-white/10 transition-all duration-300"
                 >
-                  <span className="flex-shrink-0 flex items-center justify-center w-16 h-16 rounded-xl bg-white/10 border border-white/15">
+                  <span className="flex-shrink:0 flex items-center justify-center w-16 h-16 rounded-xl bg-white/10 border border-white/15">
                     {item.icon}
                   </span>
                   <div className="flex-1 flex flex-col justify-center overflow-hidden">

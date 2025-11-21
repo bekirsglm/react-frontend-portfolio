@@ -7,7 +7,7 @@ export default function Home() {
       title: "Hakkımda",
       description: "Kısa bir biyografi ve hakkımda bilgiler.",
       to: "about",
-      icon: <FaUser size={40} className="hover:bg-blue-500 rounded-full bg-blue-400 " />,
+      icon: <FaUser size={40} className="hover:bg-blue-500 bg-blue-400 rounded-full  " />,
     },
     {
       title: "Yetenekler",
@@ -34,7 +34,7 @@ export default function Home() {
       
       <div className="max-w-4xl mx-auto text-center mb-16">
         <h1 className="text-4xl sm:text-5xl font-bold mb-4 bg-linear-to-r from-white via-purple-500 to-pink-500 bg-clip-text text-transparent">
-          Hoş Geldiniz
+          Merhaba Hoş Geldiniz
         </h1>
         <p className="text-white/80 text-lg sm:text-xl leading-relaxed">
           Benimle ilgili tüm bilgileri ve projeleri aşağıdaki bölümlerden keşfedebilirsiniz.
