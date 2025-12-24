@@ -1,7 +1,3 @@
-
-
-
-
 const icons = {
   github: (
     <svg
@@ -72,8 +68,9 @@ const Contact = () => {
               Bana Ulaşmanın En Kolay Yolu
             </h1>
             <p className="mt-4 text-base sm:text-lg text-slate-200 leading-relaxed">
-              Aşağıdaki iletişim  kanallarından dilediğinizi seçerek benimle kolayca
-              iletişime geçebilirsiniz. İlgili sayfalara erişmek için tıklamanız yeterli.
+              Aşağıdaki iletişim kanallarından dilediğinizi seçerek benimle
+              kolayca iletişime geçebilirsiniz. İlgili sayfalara erişmek için
+              tıklamanız yeterli.
             </p>
 
             <div className="mt-6 flex flex-col gap-4 sm:gap-6">
@@ -82,7 +79,11 @@ const Contact = () => {
                   key={item.label}
                   href={item.href}
                   target={item.href.startsWith("http") ? "_blank" : undefined}
-                  rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                  rel={
+                    item.href.startsWith("http")
+                      ? "noopener noreferrer"
+                      : undefined
+                  }
                   className="group flex items-start gap-4 sm:gap-6 p-6 sm:p-8 rounded-2xl border border-white/15 bg-white/5 hover:bg-white/10 transition-all duration-300"
                 >
                   <span className="flex-shrink:0 flex items-center justify-center w-16 h-16 rounded-xl bg-white/10 border border-white/15">
@@ -116,9 +117,7 @@ const Contact = () => {
             <h2 className="mt-2 sm:mt-3 text-3xl sm:text-4xl font-bold text-white">
               İstanbul, Ümraniye
             </h2>
-            <p className="text-lg sm:text-xl font-semibold mt-1 sm:mt-2">
-              
-            </p>
+            <p className="text-lg sm:text-xl font-semibold mt-1 sm:mt-2"></p>
 
             <div className="mt-4 sm:mt-6 rounded-2xl overflow-hidden border border-white/10 w-full h-64 sm:h-80 lg:h-[450px]">
               <iframe
@@ -131,15 +130,24 @@ const Contact = () => {
               ></iframe>
             </div>
 
-            {/* CV Butonu */}
-            <div className="mt-10 sm:mt-12 animate-fadeIn">
+            {/* CV ve Sertifikalar Butonları */}
+            <div className="mt-10 sm:mt-12 animate-fadeIn flex flex-col gap-4">
               <a
                 href="/cv.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block text-center py-5 px-8 rounded-2xl border border-white/15 bg-linear-to-r from-fuchsia-500 via-pink-500 to-purple-500 text-white font-semibold text-lg sm:text-xl shadow-lg transition-all duration-300 hover:scale-105 hover:from-purple-500 hover:via-pink-500 hover:to-fuchsia-500"
               >
-                CV'mi incelemek için tıkla :)
+                Özgeçmişimi/CV'mi İncelemek İçin Tıkla
+              </a>
+
+              <a
+                href="/sertifikalarım.pdf"
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="block text-center py-5 px-8 rounded-2xl border border-white/15 bg-linear-to-r from-purple-500 via-pink-500 to-fuchsia-500 text-white font-semibold text-lg sm:text-xl shadow-lg transition-all duration-300 hover:scale-105 hover:from-fuchsia-500 hover:via-pink-500 hover:to-purple-500"
+              >
+                Sertifikalarımı İncelemek İçin Tıkla
               </a>
             </div>
           </div>
