@@ -1,43 +1,66 @@
 const About = () => {
   return (
     <div className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-10 pt-28 pb-20">
-      <section className="opacity-0 animate-about-fade flex flex-col md:flex-row items-center justify-between gap-10 md:gap-20 max-w-7xl w-full mx-auto px-4 sm:px-10 lg:px-16 py-12 sm:py-16 lg:py-28 text-center md:text-left bg-white/5 rounded-[40px] shadow-2xl shadow-purple-500/10 border border-white/10">
-        <div className="flex-1 text-white space-y-5 text-center md:text-left">
-          <p className="text-4xl sm:text-5xl font-bold mb-10 tracking-[0.3em] uppercase bg-linear-to-r from-white/90 via-purple-400 to-pink-300 bg-clip-text text-transparent">
+      <section className="opacity-0 animate-about-fade flex flex-col md:flex-row items-center justify-between gap-12 lg:gap-20 max-w-7xl w-full mx-auto px-4 sm:px-8 lg:px-16 py-12 sm:py-20 lg:py-28 text-center md:text-left bg-white/5 rounded-[32px] sm:rounded-[40px] shadow-2xl shadow-purple-500/10 border border-white/10">
+
+        {/* METİN ALANI */}
+        <div className="flex-1 text-white space-y-6 text-center md:text-left">
+
+          <p className="text-3xl sm:text-4xl lg:text-5xl mb-8 sm:mb-12 font-bold tracking-[0.15em] sm:tracking-[0.3em] uppercase bg-linear-to-r from-white/90 via-purple-400 to-pink-300 bg-clip-text text-transparent">
             Hakkımda
           </p>
-          <h1 className="text-3xl sm:text-4xl mb-6 md:mb-10 font-bold">BEKİR SAĞLAM</h1>
+
+          <h1 className="text-2xl sm:text-3xl lg:text-4xl mb-4 sm:mb-6 font-bold">
+            BEKİR SAĞLAM
+          </h1>
+
           <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-fuchsia-200">
             React Front-end Developer
           </h2>
-          <div className="text-base sm:text-lg leading-relaxed text-slate-200 space-y-4 text-left break-words">
-            <p className="text-base sm:text-lg mb-4 md:mb-6 font-bold">
-              Meslek hayatıma terzi olarak başladım. Bu süreç bana sabrı, titizliği, disiplinli çalışmayı ve estetik bir bakış açısını öğretti. Bugün aynı özeni yazılım dünyasında kullanıyor, kodu bir tasarım malzemesi gibi işleyerek kullanıcı deneyimini merkeze alan arayüzler geliştiriyorum.
+
+          <div className="text-sm sm:text-base lg:text-lg leading-relaxed text-slate-200 space-y-4 text-left .break-words">
+
+            <p className="font-bold">
+              Meslek hayatıma terzi olarak başladım. Bu süreç bana sabrı, titizliği,
+              disiplinli çalışmayı ve estetik bir bakış açısını öğretti. Bugün aynı
+              özeni yazılım dünyasında kullanıyor, kodu bir tasarım malzemesi gibi
+              işleyerek kullanıcı deneyimini merkeze alan arayüzler geliştiriyorum.
             </p>
-            <p className="text-base sm:text-lg mb-4 md:mb-6 font-bold">
-              Bir React Developer olarak modern web teknolojileriyle performanslı, ölçeklenebilir ve temiz bir mimariye sahip arayüzler geliştiriyorum. Geliştirme sürecimde React, Next.js, JavaScript, TypeScript, Tailwind CSS, CSS/SASS gibi teknolojileri aktif olarak kullanıyorum. Component Driven Development, Clean Code ve Agile prensipleri çalışma yaklaşımımın temelini oluşturuyor.
+
+            <p className="font-bold">
+              Bir React Developer olarak modern web teknolojileriyle performanslı,
+              ölçeklenebilir ve temiz bir mimariye sahip arayüzler geliştiriyorum.
+              Geliştirme sürecimde React, Next.js, JavaScript, TypeScript, Tailwind
+              CSS, CSS/SASS gibi teknolojileri aktif olarak kullanıyorum. Component
+              Driven Development, Clean Code ve Agile prensipleri çalışma yaklaşımımın
+              temelini oluşturuyor.
             </p>
-            <p className="text-base sm:text-lg font-bold">
-              Her zaman öğrenmeye açık bir geliştirici olarak, kendimi yeni teknolojiler ve modern yaklaşımlarla sürekli güncel tutmayı önemsiyor; hem teknik kalitenin hem de kullanıcı deneyiminin sürekli gelişmesi için çalışıyorum.
+
+            <p className="font-bold">
+              Her zaman öğrenmeye açık bir geliştirici olarak, kendimi yeni
+              teknolojiler ve modern yaklaşımlarla sürekli güncel tutmayı
+              önemsiyor; hem teknik kalitenin hem de kullanıcı deneyiminin sürekli
+              gelişmesi için çalışıyorum.
             </p>
+
           </div>
         </div>
 
-        <div className="flex-1 flex flex-col items-center justify-center lg:space-y-6">
-          {/* Ana Foto - Her cihazda görünür */}
+        {/* GÖRSEL ALANI */}
+        <div className="flex-1 flex flex-col items-center justify-center space-y-6">
           <img
             src="/logo.jpg"
             alt="Bekir SAĞLAM portre"
-            className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg h-64 sm:h-80 md:h-96 lg:h-120 object-cover object-center rounded-[36px] border border-white/20 shadow-[0_35px_110px_rgba(217,70,239,0.35)] bg-linear-to-b from-white/10 to-transparent"
+            className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg h-80 sm:h-96 md:h-112 lg:h-136 object-cover object-center rounded-[28px] sm:rounded-[36px] border border-white/20 shadow-[0_35px_110px_rgba(217,70,239,0.35)] bg-linear-to-b from-white/10 to-transparent"
           />
 
-          {/* İkinci Foto - SADECE büyük ekranda, altta görünür */}
           <img
             src="/logo3.jpg"
             alt="Bekir SAĞLAM portre 2"
-            className="hidden lg:block w-full max-w-lg h-120 object-cover object-center rounded-[36px] border border-white/20 shadow-[0_35px_110px_rgba(217,70,239,0.35)] bg-linear-to-b from-white/10 to-transparent"
+            className="hidden lg:block w-full max-w-lg h-136 object-cover object-center rounded-[36px] border border-white/20 shadow-[0_35px_110px_rgba(217,70,239,0.35)] bg-linear-to-b from-white/10 to-transparent"
           />
         </div>
+
       </section>
     </div>
   );
