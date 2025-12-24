@@ -1,4 +1,5 @@
-import { FaGithub, FaLinkedin, FaInstagram, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 export default function Footer() {
   return (
@@ -50,15 +51,15 @@ export default function Footer() {
           >
             <FaInstagram size={25} />
           </a>
-          <a
-            href="https://twitter.com/bekirsaglamo"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-blue-500 rounded-full transition-colors"
-            title="Twitter"
-          >
-            <FaTwitter size={25 } />
-          </a>
+<a
+  href="https://twitter.com/bekirsaglamo"
+  target="_blank"
+  rel="noopener noreferrer"
+  className=" hover:text-white rounded-full transition-colors"
+  title="X"
+>
+  <FaXTwitter size={25} />
+</a>
         </div>
       </div>
 
