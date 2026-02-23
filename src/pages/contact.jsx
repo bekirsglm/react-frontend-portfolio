@@ -1,6 +1,4 @@
-
-
-
+import { FaGithub } from "react-icons/fa";
 
 const icons = {
   github: (
@@ -92,7 +90,6 @@ const Contact = () => {
                     <p className="text-xl sm:text-2xl font-semibold text-white group-hover:text-fuchsia-300 transition-colors truncate">
                       {item.label}
                     </p>
-                    {/* Value kısmını sadece mail için göstereceğiz */}
                     {item.label === "E-posta" && (
                       <p className="text-sm sm:text-lg text-fuchsia-200 mt-1 truncate">
                         {item.value}
@@ -116,9 +113,7 @@ const Contact = () => {
             <h2 className="mt-2 sm:mt-3 text-3xl sm:text-4xl font-bold text-white">
               İstanbul, Ümraniye
             </h2>
-            <p className="text-lg sm:text-xl font-semibold mt-1 sm:mt-2">
-              
-            </p>
+            <p className="text-lg sm:text-xl font-semibold mt-1 sm:mt-2"></p>
 
             <div className="mt-4 sm:mt-6 rounded-2xl overflow-hidden border border-white/10 w-full h-64 sm:h-80 lg:h-[450px]">
               <iframe
@@ -131,15 +126,24 @@ const Contact = () => {
               ></iframe>
             </div>
 
-            {/* CV Butonu */}
-            <div className="mt-10 sm:mt-12 animate-fadeIn">
+            {/* CV ve Sertifikalar Butonları */}
+            <div className="mt-10 sm:mt-12 animate-fadeIn flex flex-col gap-4">
               <a
                 href="/cv.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block text-center py-5 px-8 rounded-2xl border border-white/15 bg-linear-to-r from-fuchsia-500 via-pink-500 to-purple-500 text-white font-semibold text-lg sm:text-xl shadow-lg transition-all duration-300 hover:scale-105 hover:from-purple-500 hover:via-pink-500 hover:to-fuchsia-500"
               >
-                CV'mi incelemek için tıkla :)
+                Özgeçmişimi/cv'imi incelemek için tıkla 
+              </a>
+
+              <a
+                href="/sertifikalarım.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-center py-5 px-8 rounded-2xl border border-white/15 bg-linear-to-r from-fuchsia-500 via-pink-500 to-purple-500 text-white font-semibold text-lg sm:text-xl shadow-lg transition-all duration-300 hover:scale-105 hover:from-purple-500 hover:via-pink-500 hover:to-fuchsia-500"
+              >
+                Sertifikalarımı görmek için tıkla 
               </a>
             </div>
           </div>

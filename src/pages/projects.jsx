@@ -2,6 +2,38 @@ import { FaGithub } from "react-icons/fa";
 
 const projects = [
   {
+    title: "🥬 MANAV E-Commerce",
+    description:
+      "Gerçek dünya senaryolarına uygun full-stack e-ticaret uygulaması. Ürün yönetimi, sepet işlemleri, stok kontrolü, ödeme süreci ve sipariş geçmişi özelliklerini içerir. Next.js ve TypeScript ile ölçeklenebilir ve kullanıcı odaklı bir yapı sunar.",
+    gif: "/gifler/proje5.gif",
+    tech: [
+      "Next.js",
+      "TypeScript",
+      "TailwindCSS",
+      "REST API",
+      "Component-Based Architecture",
+    ],
+    github: "https://github.com/bekirsglm/manav-ecommerce",
+  },
+  {
+    title: "👔 LIOR E‑commerce (MERN)",
+    description:
+      "Premium erkek iç giyim markası için geliştirilmiş full‑stack MERN e‑ticaret platformu. Ürün listeleme, arama, filtreleme, sepet, JWT ile authentication ve admin panel gibi gerçek e‑ticaret iş akışlarını içerir.",
+    gif: "/gifler/proje6.gif",
+    tech: [
+      "MongoDB",
+      "Express.js",
+      "React (Vite)",
+      "Node.js",
+      "Redux Toolkit",
+      "TailwindCSS",
+      "JWT",
+      "Cloudinary",
+      "React Router",
+    ],
+    github: "https://github.com/bekirsglm/Lior-ecommerce-mern",
+  },
+  {
     title: "X (Twitter) Clone",
     description:
       "Gerçek zamanlı tweet paylaşımı, düzenleme, silme, beğenme ve medya yükleme özelliklerine sahip modern bir X (Twitter) klonu.",
@@ -44,8 +76,8 @@ export default function Projects() {
           Projelerim Hakkında
         </h1>
         <p className="text-lg sm:text-xl text-white/80 leading-relaxed">
-          Projelerimden birkaçından hangi teknolojileri kullandığımı ve projelerin
-          özelliklerini inceleyebilirsiniz.
+          Projelerimden birkaçından hangi teknolojileri kullandığımı ve
+          projelerin özelliklerini inceleyebilirsiniz.
         </p>
       </div>
 
@@ -54,25 +86,27 @@ export default function Projects() {
         {projects.map((project, idx) => (
           <div
             key={idx}
-            className="bg-white/10 border border-white/20 rounded-2xl overflow-hidden shadow-md hover:scale-[1.02] transition-transform duration-300 opacity-0 animate-fadeIn flex flex-col"
+            className="bg-white/10 border rounded-2xl  border-white/20 overflow-hidden shadow-md hover:scale-[1.02] transition-transform duration-300 opacity-0 animate-fadeIn flex flex-col"
             style={{
               animationDelay: `${idx * 0.2}s`,
               animationFillMode: "forwards",
             }}
           >
             {/* GIF / Görsel */}
-            <div className="w-full h-64 sm:h-72 md:h-80 bg-black/20 overflow-hidden">
+            <div className="w-full h-64 sm:h-72 md:h-80 bg-black/20 overflow-hidden flex items-center justify-center">
               <img
                 src={project.gif}
                 alt={project.title}
-                className="w-full h-full object-cover object-center"
+                className="max-w-full max-h-full object-contain"
               />
             </div>
 
             {/* İçerik */}
             <div className="p-5 flex flex-col flex-1">
               <div>
-                <h2 className="text-2xl sm:text-2xl font-semibold mb-2">{project.title}</h2>
+                <h2 className="text-2xl sm:text-2xl font-semibold mb-2">
+                  {project.title}
+                </h2>
                 <p className="text-white/80 text-base">{project.description}</p>
 
                 {/* Teknolojiler */}
@@ -96,7 +130,9 @@ export default function Projects() {
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 text-white/50 hover:text-pink-500 transition-colors cursor-pointer group"
                 >
-                  <span className="text-sm sm:text-base font-bold">İncelemek için</span>
+                  <span className="text-sm sm:text-base font-bold">
+                    İncelemek için
+                  </span>
                   <FaGithub
                     size={28}
                     className="bg-white/20 p-1.5 rounded-full transition-all duration-300 group-hover:text-pink-500 group-hover:shadow-[0_0_8px_#ff00ff]"
