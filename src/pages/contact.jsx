@@ -142,7 +142,7 @@ const Contact = () => {
               </a>
 
               <a
-                href="/sertifikalarım.pdf"
+                href="/sertifikalarim.pdf"
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="block text-center py-5 px-8 rounded-2xl border border-white/15 bg-linear-to-r from-purple-500 via-pink-500 to-fuchsia-500 text-white font-semibold text-lg sm:text-xl shadow-lg transition-all duration-300 hover:scale-105 hover:from-fuchsia-500 hover:via-pink-500 hover:to-purple-500"
