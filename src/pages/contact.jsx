@@ -133,7 +133,7 @@ const Contact = () => {
             {/* CV ve Sertifikalar Butonları */}
             <div className="mt-10 sm:mt-12 animate-fadeIn flex flex-col gap-4">
               <a
-                href="/bekirsaglamcv.pdf"
+                href="/bekirsaglamocv.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block text-center py-5 px-8 rounded-2xl border border-white/15 bg-linear-to-r from-fuchsia-500 via-pink-500 to-purple-500 text-white font-semibold text-lg sm:text-xl shadow-lg transition-all duration-300 hover:scale-105 hover:from-purple-500 hover:via-pink-500 hover:to-fuchsia-500"
